@@ -12,6 +12,7 @@ services:
       - MYSQL_PASSWORD=${DATABASE_PASSWORD:-password}
       - MYSQL_DATABASE=${COMPOSE_PROJECT_NAME:-wordpress}
       - EXPLICIT_DEFAULTS_FOR_TIMESTAMP=${EXPLICIT_DEFAULTS_FOR_TIMESTAMP:-1}
+
     restart: always
 
   phpmyadmin:
